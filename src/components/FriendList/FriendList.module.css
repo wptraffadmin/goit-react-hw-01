@@ -1,6 +1,13 @@
 .friendList {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .friendList {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .friendListItem {
